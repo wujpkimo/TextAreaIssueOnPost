@@ -5,10 +5,11 @@
 }
 
 <div class="text-center">
-    <form method="get">
+    <form method="post">
         <h1 class="display-4">Welcome</h1>
         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
         <textarea asp-for="MainText" readonly></textarea>
-        <input type="submit" />
+        <input type="submit" formmethod="get" value="Get" />
+        <input type="submit" formmethod="post" value="Post" />
     </form>
 </div>
